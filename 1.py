@@ -1,11 +1,9 @@
 lines = ""
 with open("1.txt", "r") as f:
-    lines = f.read().split('\n')
+    lines = f.read().splitlines()
 
 current1, current2, count1, count2 = 50, 50, 0, 0
 for line in lines:
-    if line == "":
-        continue
     dir = line[0]
     num = int(line[1:])
 
